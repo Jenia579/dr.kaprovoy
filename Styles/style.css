@@ -76,6 +76,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .heading-1 {
   font-weight: 600;
   font-size: 40px;
@@ -97,6 +98,8 @@ body {
 }
 .data-info {
   display: flex;
+  flex-wrap: wrap;
+
   background-color: white;
   color: black;
   border-radius: 25px;
@@ -119,6 +122,7 @@ body {
 .data-text {
   font-weight: 500;
   font-size: 22px;
+  text-align: center;
 }
 .about {
   font-weight: 600;
@@ -170,6 +174,7 @@ body {
 .education p {
   font-weight: 600;
   font-size: 36px;
+  padding-bottom: 15px;
 }
 .education-list {
   display: flex;
@@ -211,7 +216,7 @@ body {
 }
 .third-section-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 25px;
 }
 .card {
@@ -265,6 +270,9 @@ body {
   border-radius: 25px;
   padding: 50px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .message form {
   display: flex;
@@ -284,6 +292,7 @@ textarea {
 .message-title {
   font-weight: 600;
   font-size: 48px;
+  line-height: 25px;
 }
 .contacts-title {
   font-weight: 600;
@@ -321,7 +330,7 @@ footer {
   margin-top: 50px;
 }
 .footer {
-  padding: 100px 0;
+  padding: 100px 20px;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -405,5 +414,148 @@ textarea {
   }
   .hidden-burger {
     display: block;
+  }
+  .first-section {
+    height: calc(95vh - 130px);
+  }
+  .second-section {
+    margin-top: 25px;
+  }
+  .request {
+    margin-bottom: 30px;
+  }
+  .about {
+    margin-bottom: 35px;
+  }
+  .about-block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about-info {
+    text-align: center;
+  }
+  .about-info-block {
+    margin-top: 0;
+  }
+  .third-section {
+    margin: 50px auto;
+  }
+  .footer {
+    padding: 50px 20px;
+  }
+  .footer-logo {
+    align-self: center;
+  }
+  .data-number {
+    font-size: 40px;
+  }
+  .data-text {
+    font-size: 14px;
+  }
+  .about {
+    font-size: 42px;
+    font-weight: 200;
+  }
+
+  .education p {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  .certification p {
+    font-size: 25px;
+  }
+  .certification ul li {
+    font-size: 14px;
+  }
+  .third-section h3 {
+    font-weight: 200;
+    font-size: 42px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+  .types-text {
+    font-size: 23px;
+  }
+  .four-section h3 {
+    font-weight: 200;
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 571px) {
+  .education-certification {
+    grid-template-columns: 1fr;
+  }
+  .third-section-services {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 774px) {
+  .first-section {
+    height: 82.5vh;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-info-text {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .first-section {
+    height: 75.5vh;
+    padding-bottom: 12px;
+  }
+  .data-info div {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .about-info-block {
+    gap: 20px;
+  }
+
+  .education-list {
+    gap: 15px;
+  }
+
+  .certification ul {
+    gap: 15px;
+  }
+
+  .third-section {
+    gap: 30px;
+  }
+  .card {
+    padding: 20px;
+  }
+
+  .four-section {
+    gap: 30px;
+  }
+  .contacts {
+    padding: 20px;
+    gap: 15px;
+  }
+  .contacts-title {
+    font-size: 18px;
+  }
+  .contacts-text {
+    font-size: 14px;
+  }
+  .message {
+    padding: 20px;
+    gap: 15px;
+  }
+  .message-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  p {
+    font-size: 14px;
   }
 }
