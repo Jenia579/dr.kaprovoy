@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr.Kaprovoy | Neurosurgeon</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +14,10 @@
     />
     <link rel="stylesheet" href="./Styles/reset.css" />
     <link rel="stylesheet" href="./Styles/style.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOKaINHt7GpaDoHkcZsPU9ZL76mWunkkM&callback=initMap&v=weekly"
+      defer
+    ></script>
     <script src="./Scripts/jquery-3.6.4.min.js" defer></script>
     <script src="./Scripts/scripts.js" defer></script>
   </head>
@@ -61,11 +66,11 @@
           </p>
           <button class="request">Request Call</button>
           <div class="data-info">
-            <div>
+            <div class="data-number-1">
               <p class="data-number">1250</p>
               <p class="data-text">Years in the insurgency</p>
             </div>
-            <div>
+            <div class="data-number-2">
               <p class="data-number">2500+</p>
               <p class="data-text">Consultations in Year</p>
             </div>
@@ -73,7 +78,7 @@
               <p class="data-number">400</p>
               <p class="data-text">Hard Operations</p>
             </div>
-            <div class="data-number-third">
+            <div class="data-number-third data-number-4">
               <p class="data-number">800</p>
               <p class="data-text">Real Testimonials</p>
             </div>
@@ -213,7 +218,7 @@
             <p class="contacts-text">+74959481053</p>
             <p class="contacts-title">E-mail:</p>
             <p class="contacts-text">real@chirurg@mail.ru</p>
-            <div class="map">Here must be map</div>
+            <div id="map"></div>
           </div>
           <div class="message">
             <p class="message-title">Message:</p>
