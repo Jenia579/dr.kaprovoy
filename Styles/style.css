@@ -97,9 +97,8 @@ body {
   margin-bottom: 70px;
 }
 .data-info {
-  display: flex;
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   background-color: white;
   color: black;
   border-radius: 25px;
@@ -493,6 +492,12 @@ textarea {
   .third-section-services {
     grid-template-columns: 1fr;
   }
+  .data-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .data-number-third {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 @media (max-width: 774px) {
   .first-section {
@@ -557,5 +562,111 @@ textarea {
   }
   p {
     font-size: 14px;
+  }
+  .message form input,
+  textarea {
+    padding: 15px 5px;
+  }
+  input,
+  textarea {
+    font-size: small;
+  }
+  .five-section-title {
+    font-weight: 200;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding: 30px 20px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .footer-m-2 p {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #email {
+    padding: 15px 5px;
+    gap: 5px;
+  }
+  #submit2 {
+    padding: 15px 5px;
+    gap: 10px;
+  }
+  ul,
+  ul li {
+    font-size: 12px;
+  }
+  .footer {
+    gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .heading-2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  .heading-1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .request {
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  .about {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-info {
+    font-size: 35px;
+  }
+  .about-block {
+    padding: 18px 15px 0 25px;
+  }
+  .about-info-block {
+    gap: 10px;
+  }
+  .third-section h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .third-section {
+    gap: 15px;
+  }
+  .four-section h3 {
+    font-size: 30px;
+  }
+  .four-section {
+    gap: 20px;
+  }
+  .four-section-data {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+  }
+  .five-section-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .container-carousel {
+    width: 100%;
+    height: 10vh;
+  }
+  .carousel-inner {
+    height: 1vh;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    order: 4;
   }
 }
