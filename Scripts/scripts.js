@@ -5,3 +5,26 @@
         zoom: 4,
         center: uluru,
       });
+
+$(document).ready(()=> {
+    $(".hidden-burger").click(()=> {
+       $("#nav-container").toggleClass("hidden")
+    })
+    $(".close").click(()=> {
+        $("#nav-container").toggleClass("hidden")
+    })
+
+    $(".hidden-burger").click(()=> {
+       $("#bg").toggleClass("hidden-bg")
+    })
+    $(".close").click(()=> {
+        $("#bg").toggleClass("hidden-bg")
+    })
+
+    $(".bg").click(()=> {
+        $("#bg").toggleClass("hidden-bg")
+    })
+    $(".bg").click(()=> {
+        $("#nav-container").toggleClass("hidden")
+    })
+})
