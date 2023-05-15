@@ -9,22 +9,21 @@
 $(document).ready(()=> {
     $(".hidden-burger").click(()=> {
        $("#nav-container").toggleClass("hidden")
+              $("#bg").toggleClass("hidden-bg")
+       $(".header").toggleClass("hidden-header")
+      //  console.log("test")
     })
     $(".close").click(()=> {
         $("#nav-container").toggleClass("hidden")
-    })
-
-    $(".hidden-burger").click(()=> {
-       $("#bg").toggleClass("hidden-bg")
-    })
-    $(".close").click(()=> {
         $("#bg").toggleClass("hidden-bg")
+               $(".header").toggleClass("hidden-header")
+                      // console.log("test")
     })
 
     $(".bg").click(()=> {
+      $("#nav-container").toggleClass("hidden")
         $("#bg").toggleClass("hidden-bg")
-    })
-    $(".bg").click(()=> {
-        $("#nav-container").toggleClass("hidden")
+               $(".header").toggleClass("hidden-header")
+                      // console.log("test")
     })
 })

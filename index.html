@@ -20,6 +20,14 @@
     ></script>
     <script src="./Scripts/jquery-3.6.4.min.js" defer></script>
     <script src="./Scripts/scripts.js" defer></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+    <script type="text/javascript"></script>
+    <script src="./Scripts/emailService.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -28,7 +36,7 @@
           <ul class="top-header-list">
             <li>Monday-Sunday</li>
             <li>8:00 - 20:00</li>
-            <li>+(378)xxx-xxx-xxx</li>
+            <li>+7 926 180 3270</li>
             <li>doctorcaprovoy@mail.ru</li>
           </ul>
         </div>
@@ -44,10 +52,12 @@
             <ul class="header-list">
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+              <!-- <li><a href="#">Gallery</a></li> -->
               <li id="call">
-                <a href="#" class="call-btn">Take a call right now</a>
+                <a href="tel:+7 926 180 3270" class="call-btn"
+                  >Take a call right now</a
+                >
               </li>
             </ul>
           </nav>
@@ -102,8 +112,8 @@
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+              <!-- <li><a href="#">Gallery</a></li> -->
             </ul>
           </div>
         </div>
@@ -116,7 +126,9 @@
             Professional medical & surgical treatment of ENT conditions. <br />
             Reliable and affordable help with any disorders.
           </p>
-          <button class="request">Request Call</button>
+          <button class="request">
+            <a href="tel:+7 926 180 3270">Request Call</a>
+          </button>
           <div class="data-info">
             <div class="data-number-1">
               <p class="data-number">1250</p>
@@ -257,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper four-section">
+      <section class="wrapper four-section" id="contacts">
         <h3>Contact Us</h3>
         <div class="four-section-data">
           <div class="contacts">
@@ -266,8 +278,8 @@
               ул. Колмогорова, 1, Москва, Россия, 119991
             </p>
             <p class="contacts-title">Phone Number</p>
-            <p class="contacts-text">+74959391000</p>
-            <p class="contacts-text">+74959481053</p>
+            <p class="contacts-text">+7 926 180 3270</p>
+            <!-- <p class="contacts-text">+74959481053</p> -->
             <p class="contacts-title">E-mail:</p>
             <p class="contacts-text">real@chirurg@mail.ru</p>
             <div id="map"></div>
@@ -279,12 +291,16 @@
               Sign up for our newsletter and receive regular updates on new
               products, services, and industry developments.
             </p>
-            <form action=".">
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Phone Number" />
-              <input type="text" placeholder="E-mail" />
+            <form id="contact_form">
+              <input name="from_name" type="text" placeholder="Name" />
+              <input
+                name="phone_number"
+                type="text"
+                placeholder="Phone Number"
+              />
+              <input name="reply_to" type="text" placeholder="E-mail" />
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="10"
@@ -295,7 +311,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper five-section">
+      <!-- <section class="wrapper five-section">
         <p class="five-section-title">Gallery</p>
         <div class="five-section-grid">
           <div class="item-1 item">
@@ -317,7 +333,7 @@
             <img src="./Images/gallary_01.png" alt="" />
           </div>
         </div>
-      </section>
+      </section> -->
       <footer>
         <div class="wrapper footer">
           <div class="footer-logo">
@@ -329,18 +345,18 @@
             <p class="text">Contact Data</p>
             <ul>
               <li>ул. Колмогорова, 1, Москва, Россия, 119991</li>
-              <li>+74959391000</li>
-              <li>+74959481053</li>
+              <li>+7 926 180 3270</li>
+              <!-- <li>+74959481053</li> -->
               <li>real@chirurg@mail.ru</li>
             </ul>
           </div>
           <div class="footer-list">
             <p class="text">Useful Links</p>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+              <!-- <li><a href="#">Gallery</a></li> -->
             </ul>
           </div>
           <div class="footer-message">

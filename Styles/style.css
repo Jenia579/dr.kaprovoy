@@ -12,6 +12,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 10px;
 }
 
 .main-header {
@@ -72,7 +73,7 @@ body {
   background-image: url(../Images/background.jpg);
   background-position: center;
   background-size: cover;
-  height: calc(80vh - 130px);
+  /* height: calc(80vh - 130px); */
   color: white;
   display: flex;
   align-items: center;
@@ -97,6 +98,15 @@ body {
   border-radius: 100px;
   margin-bottom: 70px;
 }
+a,
+a:link,
+a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  color: white;
+  /* display: inline-block; */
+}
+
 .data-info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,7 +145,7 @@ body {
 }
 .about {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -161,11 +171,11 @@ body {
 }
 .about-info {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 40px;
 }
 .about-info-text {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
 }
 .education-certification {
   margin-top: 25px;
@@ -182,7 +192,7 @@ body {
 }
 .education p {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
   padding-bottom: 15px;
 }
 .education-list {
@@ -190,7 +200,7 @@ body {
   flex-direction: column;
   gap: 25px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 18px;
 }
 .certification {
   padding: 25px;
@@ -200,7 +210,7 @@ body {
 }
 .certification p {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 25px;
 }
 .certification ul {
@@ -210,7 +220,7 @@ body {
 }
 .certification ul li {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 18px;
 }
 .third-section {
   margin: 50px auto;
@@ -220,7 +230,7 @@ body {
 }
 .third-section h3 {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 60px;
   text-align: center;
 }
 .third-section-services {
@@ -245,11 +255,11 @@ body {
 }
 .types-text {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
 }
 .card-text {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 18px;
 }
 .four-section {
   display: flex;
@@ -258,7 +268,7 @@ body {
 }
 .four-section h3 {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 60px;
   text-align: center;
 }
 .four-section-data {
@@ -301,7 +311,7 @@ textarea {
 }
 .message-title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 25px;
 }
 .contacts-title {
@@ -364,7 +374,7 @@ footer {
   flex-direction: column;
   gap: 25px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
 }
 .footer-list a {
   color: #ffffff;
@@ -380,11 +390,11 @@ footer {
 }
 .footer-m-2 p {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
 }
 .text {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 25px;
 }
 #email {
@@ -417,10 +427,10 @@ textarea {
 
 .bg {
   flex: 4;
-  height: 100%;
+  height: 100vh;
 }
 #bg {
-  z-index: 5;
+  z-index: -1;
   position: fixed;
   background-color: transparent;
   width: 100vw;
@@ -496,11 +506,15 @@ textarea {
 } */
 
 .hidden-bg {
-  background-color: rgba(0, 0, 0, 0.233) !important ;
+  background-color: rgba(0, 0, 0, 0.4) !important ;
   top: 0px;
-  /* transform: translateX(0%) !important; */
-}
+  z-index: 5;
 
+  /* transform: translateX(-100%) !important; */
+}
+.hidden-header {
+  z-index: 10;
+}
 .hidden {
   transform: translateX(0%) !important;
 }
