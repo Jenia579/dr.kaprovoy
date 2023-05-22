@@ -86,7 +86,7 @@ body {
 }
 .heading-2 {
   font-weight: 600;
-  font-size: 64px;
+  font-size: 60px;
   margin-bottom: 25px;
 }
 .first-section-info {
@@ -103,7 +103,7 @@ a:link,
 a:visited {
   /* color: inherit; */
   text-decoration: none;
-  color: white;
+  color: black;
   /* display: inline-block; */
 }
 
@@ -353,7 +353,7 @@ footer {
   padding: 100px 20px;
   color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr;
   /* align-items: center; */
 }
 .footer-firstname {
@@ -366,7 +366,7 @@ footer {
 }
 
 .copyright {
-  padding: 10px 0;
+  padding: 10px 35px;
 }
 .footer-list ul,
 .footer-contacts ul {
@@ -519,6 +519,13 @@ textarea {
   transform: translateX(0%) !important;
 }
 
+.footer-left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 @media (max-width: 1024px) {
   .about-info-text {
     font-weight: 500;
@@ -609,6 +616,9 @@ textarea {
 }
 
 @media (max-width: 571px) {
+  .heading-1 {
+    margin-top: 20px;
+  }
   .education-certification {
     grid-template-columns: 1fr;
   }
@@ -630,6 +640,11 @@ textarea {
   .data-number-third {
     border-top: 1px solid #d9d9d9;
   }
+  .four-section-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 }
 @media (max-width: 774px) {
   .first-section {
@@ -644,7 +659,7 @@ textarea {
     line-height: 1.5rem;
   }
   .first-section {
-    height: 93.5vh;
+    height: auto;
     padding-bottom: 12px;
   }
   .data-info div {
@@ -744,10 +759,8 @@ textarea {
   .heading-1 {
     font-size: 25px;
     margin-bottom: 5px;
+    margin-top: 20px;
   }
-  /* .data-info div:not(:last-child).data-number-2 {
-    border-top-right-radius: 25px;
-  } */
   p {
     font-size: 10px;
   }
@@ -782,11 +795,17 @@ textarea {
   .four-section {
     gap: 20px;
   }
+  /* .four-section-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  } */
   .four-section-data {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     gap: 25px;
   }
+
   .five-section-title {
     font-size: 30px;
     margin-bottom: 15px;
@@ -800,7 +819,23 @@ textarea {
   }
   .footer {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 25px;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .footer-list-nav {
+    flex-direction: row !important;
+  }
+  footer {
+    margin-top: 25px;
+  }
+  .wrapper {
+    padding-left: 7px;
+    padding-right: 7px;
   }
   /* .text {
     font-weight: 600;
